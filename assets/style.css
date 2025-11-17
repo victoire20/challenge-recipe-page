@@ -62,7 +62,6 @@ body {
     font-family: 'outfit';
     font-size: 16px;
     background: var(--white);
-    /* color: hsl(20deg 2.52% 46.67%); */
     color: var(--stone-600);
 }
 
@@ -149,32 +148,32 @@ strong {
     margin-top: 15px;
 }
 
-.nutrition-table {
+.nutrition__table {
     width: 100%;
     border-collapse: collapse;
     font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
-.nutrition-table td {
+.nutrition__table td {
     padding: 12px 0;
     vertical-align: middle;
     border-bottom: 1px solid var(--stone-150);
 }
-.nutrition-table td:first-child {
+.nutrition__table td:first-child {
     color: var(--stone-600);
     font-weight: 400;
     padding-left: 50px;
 }
-.nutrition-table td:last-child {
+.nutrition__table td:last-child {
     text-align: right;
     padding-right: 2px;
     text-align: start;
 }
-.nutrition-table td strong {
+.nutrition__table td strong {
     color: var(--brown-800);
     font-weight: 700;
 }
 
-.nutrition-table tr:last-child td {
+.nutrition__table tr:last-child td {
     border-bottom: none;
 }
 
@@ -187,10 +186,9 @@ footer {
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1440px) {
     header {
         margin-top: 40px;
-        max-width: calc(100% - 60px);
         border-radius: 10px;
         overflow: hidden;
     }
