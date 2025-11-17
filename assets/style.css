@@ -62,7 +62,8 @@ body {
     font-family: 'outfit';
     font-size: 16px;
     background: var(--white);
-    color: hsl(20deg 2.52% 46.67%);
+    /* color: hsl(20deg 2.52% 46.67%); */
+    color: var(--stone-600);
 }
 
 header {
@@ -91,12 +92,14 @@ h1 {
 
 h2 {
     font-family: 'Young Serif';
+    font-size: 1.7rem;
+    letter-spacing: 2px;
     color: var(--brown-800);
     margin-bottom: 15px;
 }
 
 h3 {
-    color: hsl(332, 51%, 32%);
+    color: var(--rose-800);
 }
 
 p {
@@ -126,7 +129,7 @@ li::marker {
 
 li::marker, strong {
     font-weight: bold;
-    color: var(--brown-800);
+    color: var(--rose-800);
     vertical-align: center;
 }
 
@@ -135,7 +138,7 @@ strong {
 }
 
 .preparation {
-    background: hsl(322.5deg 100% 98.43%);
+    background: var(--rose-50);
     border: none;
     border-radius: 10px;
     padding: 20px;
@@ -186,7 +189,8 @@ footer {
 
 @media screen and (min-width: 600px) {
     header {
-        margin: 40px auto 0;
+        margin-top: 40px;
+        max-width: calc(100% - 60px);
         border-radius: 10px;
         overflow: hidden;
     }
