@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--stone-600);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'outfit';
+    font-size: 16px;
+    background: var(--white);
+    color: hsl(20deg 2.52% 46.67%);
+}
+
+header {
+    background: no-repeat center center / cover url(/assets/images/image-omelette.jpeg);
+    width: 100%;
+    max-width: 1300px; /* don't grow past design width */
+    margin: 0 auto; /* center on large screens */
+    padding: 0 30px; /* keep side spacing on small screens */
+    box-sizing: border-box;
+    height: 200px;
+}
+
+main {
+    margin: 40px auto; /* center content */
+    max-width: 1000px; /* design max width */
+    padding: 0 30px; /* internal side spacing */
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Young Serif';
+    font-size: 2.1rem;
+    color: hsl(24, 5%, 18%);
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Young Serif';
+    color: var(--brown-800);
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+ul, ol {
+    margin-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    padding-left: 20px;
+}
+
+hr {
+    border: 1px solid var(--stone-150);
+    margin: 30px 0;
+}
+
+li::marker {
+    vertical-align: middle;
+    align-self: center;
+}
+
+li::marker, strong {
+    font-weight: bold;
+    color: var(--brown-800);
+    vertical-align: center;
+}
+
+strong {
+    color: var(--stone-600);
+}
+
+.preparation {
+    background: hsl(322.5deg 100% 98.43%);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.preparation ul {
+    margin-top: 15px;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+.nutrition-table td {
+    padding: 12px 0;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--stone-150);
+}
+.nutrition-table td:first-child {
+    color: var(--stone-600);
+    font-weight: 400;
+    padding-left: 50px;
+}
+.nutrition-table td:last-child {
+    text-align: right;
+    padding-right: 2px;
+    text-align: start;
+}
+.nutrition-table td strong {
+    color: var(--brown-800);
+    font-weight: 700;
+}
+
+.nutrition-table tr:last-child td {
+    border-bottom: none;
+}
+
+footer {
+    font-size: .6rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: 40px auto 20px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        margin: 40px auto 0;
+        max-width: calc(100% - 60px);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
